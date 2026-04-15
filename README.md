@@ -11,7 +11,7 @@ VOID WonDragAcceptFiles(HWND hWnd, BOOL fAccept);
 BOOL WonDragQueryPoint(HDROP hDrop, POINT *ppt);
 VOID WonDragFinish(HDROP hDrop);
 
-HGLOBAL WonCreateHDROP(LPITEMIDLIST pidlRoot, LPITEMIDLIST * apidl, UINT cidl);
+HGLOBAL WonCreateHDROP(LPITEMIDLIST pidlRoot, LPITEMIDLIST *apidl, UINT cidl);
 ```
 
 License: MIT

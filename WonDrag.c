@@ -135,7 +135,7 @@ BOOL WONAPI WonDragQueryPoint(HDROP hDrop, POINT *ppt)
     return bRet;
 }
 
-HGLOBAL WONAPI WonCreateHDROP(LPITEMIDLIST pidlRoot, LPITEMIDLIST * apidl, UINT cidl)
+HGLOBAL WONAPI WonCreateHDROP(LPITEMIDLIST pidlRoot, LPITEMIDLIST *apidl, UINT cidl)
 {
     UINT i;
     INT size = 0;

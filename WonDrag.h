@@ -18,7 +18,7 @@ VOID WONAPI WonDragAcceptFiles(HWND hWnd, BOOL fAccept);
 BOOL WONAPI WonDragQueryPoint(HDROP hDrop, POINT *ppt);
 VOID WONAPI WonDragFinish(HDROP hDrop);
 
-HGLOBAL WONAPI WonCreateHDROP(LPITEMIDLIST pidlRoot, LPITEMIDLIST * apidl, UINT cidl);
+HGLOBAL WONAPI WonCreateHDROP(LPITEMIDLIST pidlRoot, LPITEMIDLIST *apidl, UINT cidl);
 
 #ifdef __cplusplus
 } // extern "C"
