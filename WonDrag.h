@@ -20,6 +20,12 @@ VOID WONAPI WonDragFinish(HDROP hDrop);
 
 HGLOBAL WONAPI WonCreateHDROP(LPITEMIDLIST pidlRoot, LPITEMIDLIST *apidl, UINT cidl);
 
+#ifdef UNICODE
+    #define WonDragQueryFile WonDragQueryFileW
+#else
+    #define WonDragQueryFile WonDragQueryFileA
+#endif
+
 #ifdef __cplusplus
 } // extern "C"
 #endif
